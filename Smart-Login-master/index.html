@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sign up</title>
+</head>
+<body class="pb-4" >
+    <section class="w-50 text-white p-4 mx-auto mt-4  ">
+        <h1 class="text-center">Smart Login System</h1>
+        <form class="d-flex flex-column p-2 ">
+
+            <div class="mb-3">
+                <input type="name" oninput="validateName()" class="form-control is-invalid name "  placeholder="Enter your name">
+                <p class="nameError text-danger d-none "> Name must start with capital letter followed by 3 characters at least.</p>
+              </div>
+
+              <div class="mb-3">
+                <input type="email" oninput="validateEmail()" class="form-control is-invalid  email "  placeholder="Enter your email">
+                <p class="emailError text-danger d-none">Email must contain numbers and special characters .com </p>
+              </div>
+
+              <div class="mb-3">
+                <input type="password" oninput="validatePassword()" class="form-control pass is-invalid "  placeholder="Enter your password">
+                <p class="passError text-danger d-none">Password must start with capital letter and contains numbers and special characters.</p>
+              </div>
+
+              <button type="button" class="btn btn-outline-primary mb-2 submitBtn">Sign Up</button>
+              <p class="text-center">You have an account? <a href="login.html" class="text-white">Signin</a></p>
+
+        </form>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

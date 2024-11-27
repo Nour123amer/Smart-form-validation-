@@ -1,0 +1,17 @@
+body{
+    background-color: #24353ffe;
+}
+
+section{
+    background-color: #24353ffe;
+    height: 400px;
+    box-shadow: 1rem 1rem 1rem 1rem #0d1920fe;
+}
+
+h1,
+button{
+    color: rgb(13, 190, 230);
+}
+a{
+    text-decoration: none;
+}
